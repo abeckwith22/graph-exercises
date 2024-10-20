@@ -36,7 +36,6 @@ class Graph {
 
   // this function accepts a vertex and removes it from the nodes property, it also updates any adjacency lists that include that vertex
   removeVertex(vertex) {
-    // idea: get vertext adjacency list and remove adjacency list from its neighbors
     for(let neighbors of vertex.adjacent){
       this.removeEdge(vertex, neighbors);
     }
